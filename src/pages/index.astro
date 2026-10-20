@@ -1,29 +1,5 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro'
-
-const getUser = () => {
-    return Math.random() > 0.5 ? null : { name: 'Mario', email: 'mario@example.com' };
-}
-
-const user = getUser()
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout>
-  <div class="content text-center">
-    {user && (
-        <h2 class="mb-6">Welcome, {user.name}</h2>
-        <p>Logged in as {user.email}</p>
-    )}
-    
-    <p>
-      This is a project that allows you to search for books and add them to your
-      library.
-    </p>
-    <a
-      href="/books"
-      class="inline-block bg-violet-600 text-white py-1.5 px-2.5 rounded-sm no-underline mt-5 hover:bg-violet-500"
-    >
-      Take a look at my reviews
-    </a>
-  </div>
-</BaseLayout>
+<BaseLayout title="MyBookVibes" current="home" />

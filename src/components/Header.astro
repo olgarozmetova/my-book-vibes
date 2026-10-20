@@ -1,0 +1,51 @@
+---
+interface Props {
+  current?: "home" | "books" | "about";
+}
+
+const { current } = Astro.props;
+
+const links = [
+  { href: "/", id: "home", label: "Home" },
+  { href: "/books", id: "books", label: "Books" },
+  { href: "/about", id: "about", label: "About" },
+] as const;
+---
+
+<header class="bg-canvas">
+  <div class="mx-auto flex h-16 w-full max-w-300 items-center justify-between gap-4 px-5">
+    <a href="/" class="font-display text-xl font-semibold tracking-[-0.03em] transition-colors hover:text-blush">
+      MyBookVibes
+    </a>
+    <nav class="flex items-center gap-4 sm:gap-7" aria-label="Principal">
+      {
+        links.map((link) => (
+          <a
+            href={link.href}
+            aria-current={current === link.id ? "page" : undefined}
+            class:list={[
+              "transition-colors hover:text-paper",
+              current === link.id
+                ? "font-serif text-base font-medium text-paper"
+                : "text-sm font-semibold text-muted",
+            ]}
+          >
+            {link.label}
+          </a>
+        ))
+      }
+    </nav>
+    <div class="hidden items-center gap-3 sm:flex">
+      <div class="text-right">
+        <small class="block text-[11px] tracking-[0.08em] text-muted">LECTOR ACTIVO</small>
+        <strong class="text-xs font-semibold">Welcome, Elena</strong>
+      </div>
+      <div class="grid size-8 place-items-center rounded-full bg-blush text-ink" aria-hidden="true">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+          <circle cx="6" cy="4" r="2"></circle>
+          <path d="M2 10c.6-2 2-3 4-3s3.4 1 4 3"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,29 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
-  --font-sans: 'Poppins', sans-serif;
-  --shadow-hard: 8px 8px 0 var(--tw-shadow-color, currentColor);
-}
+  --color-canvas: #10141a;
+  --color-paper: #dfe2eb;
+  --color-coral: #ff5733;
+  --color-blush: #ffb4a4;
+  --color-muted: #e4beb6;
+  --color-card: #181c22;
+  --color-gold: #ffbf00;
+  --color-gold-soft: #ffe2ab;
+  --color-lilac: #d0bcff;
+  --color-line: #31353c;
+  --color-ink: #630e00;
+  --color-surface: #262a31;
+  --color-deep: #0a0e14;
 
-@layer base {
-  body {
-    color: #333;
-  }
-
-  .content {
-    width: 100%;
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 0 20px;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-  }
-
-  p {
-    font-size: 1.1rem;
-    line-height: 2rem;
-  }
+  --font-sans: "Avenir Next", "Segoe UI", sans-serif;
+  --font-serif: "Iowan Old Style", Palatino, Georgia, serif;
+  --font-display: "Avenir Next", "Trebuchet MS", sans-serif;
 }
