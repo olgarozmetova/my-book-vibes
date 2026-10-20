@@ -1,0 +1,24 @@
+---
+import TextLink from "../TextLink.astro";
+import { edition } from "../../data/books";
+---
+
+<p class="flex items-center gap-2 text-[11px] font-medium tracking-[0.12em] text-muted">
+  <i class="inline-block size-1.5 bg-coral"></i>
+  CRÍTICA NOCTURNA · EDICIÓN #{edition.number}
+</p>
+<h1 class="mt-4.5 max-w-190 font-display text-4xl leading-[1.08] font-extrabold tracking-[-0.03em] sm:text-5xl lg:text-[3.5rem]">
+  <span class="block">Lecturas sin filtro para</span>
+  <span class="block">decidir en <em class="font-serif font-normal text-blush not-italic">3 minutos</em> tu</span>
+  <span class="block">próximo libro.</span>
+</h1>
+<p class="mt-5.5 flex flex-wrap items-center gap-x-4.5 gap-y-2 text-xs font-semibold tracking-[0.06em] text-muted">
+  <span>CURADURÍA PERSONAL INDEPENDIENTE POR ELENA</span>
+  <span aria-hidden="true">•</span>
+  <span>ACTUALIZACIÓN SEMANAL LOS JUEVES</span>
+</p>
+<p class="mt-5.5 flex flex-wrap items-center gap-4.5">
+  <TextLink href="/books">Explorar el archivo completo</TextLink>
+  <span class="text-line" aria-hidden="true">/</span>
+  <span class="font-serif text-[15px] text-muted">{edition.archiveLabel}</span>
+</p>
