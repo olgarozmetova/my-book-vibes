@@ -1,9 +1,19 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/home/Hero.astro";
+import FeaturedVerdict from "../components/home/FeaturedVerdict.astro";
+
+
+import { books } from "../data/books";
+
+const featured = books.find((book) => book.featured);
+
 ---
 
 <BaseLayout title="MyBookVibes" current="home">
   <Hero />
-  
+  {featured && <FeaturedVerdict book={featured} />}
+
+
 </BaseLayout>
+

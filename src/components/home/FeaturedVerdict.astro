@@ -1,0 +1,46 @@
+---
+import TextLink from "../TextLink.astro";
+import { edition, formatScore, type Book } from "../../data/books";
+
+interface Props {
+  book: Book;
+}
+
+const { book } = Astro.props;
+---
+
+<div class="mt-12 mb-4 flex flex-col gap-1 text-[11px] tracking-[0.08em] text-muted sm:flex-row sm:items-center sm:justify-between">
+  <span><b class="font-semibold text-coral">01</b> / VEREDICTO DESTACADO DE LA SEMANA</span>
+  <span>{edition.featuredDate}</span>
+</div>
+<article class="grid gap-8 bg-card p-6 md:min-h-125 md:grid-cols-[17.5rem_1fr] md:gap-12 md:p-10">
+  <img
+    class="h-80 w-full bg-surface object-cover md:h-105 md:w-70"
+    src={book.cover}
+    alt={book.title}
+    width="280"
+    height="420"
+  />
+  <div>
+    <div class="flex items-start justify-between gap-4">
+      <p class="text-[11px] tracking-widest text-muted">{book.tag}</p>
+      <p class="flex items-end gap-1.5">
+        <span class="text-5xl leading-none font-bold text-coral">{formatScore(book.score)}</span>
+        <small class="mb-1.5 text-xs text-muted">/ 10</small>
+      </p>
+    </div>
+    <h2 class="mt-3 font-display text-[2rem] tracking-[-0.03em]">{book.title}</h2>
+    <p class="mt-1 mb-4 font-serif text-lg">{book.author}</p>
+    <p class="flex flex-wrap gap-x-4.5 gap-y-1 text-[13px] tracking-[0.04em] text-muted">
+      <span>{book.facts[0]}</span>
+      <span aria-hidden="true">•</span>
+      <span>{book.facts[1]}</span>
+    </p>
+    <blockquote class="mt-5.5 border-l-2 border-coral pl-4 font-serif text-lg leading-[1.45]">
+      {book.quote}
+    </blockquote>
+    <p class="mt-5.5">
+      <TextLink href={`/books/${book.slug}`}>Leer reseña completa</TextLink>
+    </p>
+  </div>
+</article>
