@@ -1,12 +1,12 @@
 ---
-import TextLink from "../TextLink.astro";
-import { edition, formatScore, type Book } from "../../data/books";
+import TextLink from "../TextLink.astro"
+import { edition, formatScore, type Book } from "../../data/books"
 
 interface Props {
-  book: Book;
+  book: Book
 }
 
-const { book } = Astro.props;
+const { book } = Astro.props
 ---
 
 <div class="mt-12 mb-4 flex flex-col gap-1 text-[11px] tracking-[0.08em] text-muted sm:flex-row sm:items-center sm:justify-between">
