@@ -1,0 +1,21 @@
+---
+import NewsletterForm from "../NewsletterForm.tsx"
+---
+
+<section class="mt-12 grid items-start gap-10 md:grid-cols-[1.2fr_0.8fr]" id="boletin">
+  <div>
+    <p class="text-[11px] font-semibold tracking-widest text-muted">MARGINALIA · ELENA</p>
+    <p class="mt-3 font-serif text-xl leading-[1.45]">
+      “No leo para escapar del mundo, sino para afilar las palabras con las que responderle a medianoche. Un libro que no te incomoda en las primeras cincuenta páginas rara vez merece el desvelo.”
+    </p>
+  </div>
+  <div class="bg-card p-6">
+    <p class="text-[11px] font-semibold tracking-widest text-muted">EL DESPACHO SEMANAL</p>
+    <h3 class="mt-2 mb-2 font-display text-[1.375rem]">Una advertencia literaria cada jueves.</h3>
+    <p class="mb-4 font-serif text-muted">
+      Sin promociones ni relleno editorial. Solo tres libros, sus fallos honestos y un fragmento subrayado.
+    </p>
+    <NewsletterForm client:load />
+    <p class="mt-2.5 text-xs text-muted">Cero spam. Desuscripción con un solo clic.</p>
+  </div>
+</section>
