@@ -13,8 +13,8 @@ const links = [
 ---
 
 <header class="bg-canvas">
-  <div class="mx-auto flex h-16 w-full max-w-300 items-center justify-between gap-4 px-5">
-    <a href="/" class="font-display text-xl font-semibold tracking-[-0.03em] transition-colors hover:text-blush">
+  <div class="mx-auto flex h-20 w-full max-w-300 items-center justify-between gap-4 px-5 sm:h-28">
+    <a href="/" class="font-display text-xl font-semibold tracking-[-0.03em] transition-colors hover:text-blush sm:text-3xl">
       MyBookVibes
     </a>
     <nav class="flex items-center gap-4 sm:gap-7" aria-label="Principal">
@@ -26,8 +26,8 @@ const links = [
             class:list={[
               "transition-colors hover:text-paper",
               current === link.id
-                ? "font-serif text-base font-medium text-paper"
-                : "text-sm font-semibold text-muted",
+                ? "font-serif text-base font-medium text-paper sm:text-xl"
+                : "text-sm font-semibold text-muted sm:text-lg",
             ]}
           >
             {link.label}
@@ -35,17 +35,13 @@ const links = [
         ))
       }
     </nav>
-    <div class="hidden items-center gap-3 sm:flex">
+    <a href="/about" class="group hidden items-center gap-4 md:flex">
       <div class="text-right">
-        <small class="block text-[11px] tracking-[0.08em] text-muted">LECTOR ACTIVO</small>
-        <strong class="text-xs font-semibold">Welcome, Elena</strong>
+        <small class="block text-sm tracking-[0.08em] text-muted">RESEÑAS DE</small>
+        <strong class="font-display text-2xl font-semibold transition-colors group-hover:text-blush">Elena</strong>
       </div>
-      <div class="grid size-8 place-items-center rounded-full bg-blush text-ink" aria-hidden="true">
-        <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
-          <circle cx="6" cy="4" r="2"></circle>
-          <path d="M2 10c.6-2 2-3 4-3s3.4 1 4 3"></path>
-        </svg>
-      </div>
-    </div>
+      <img src="/portraits/elena.jpg" alt="" width="80" height="80" class="size-20 rounded-full object-cover object-[68%_30%]" />
+    </a>
   </div>
 </header>
+
