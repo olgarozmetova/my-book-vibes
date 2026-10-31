@@ -178,7 +178,7 @@ export const books: Book[] = [
     verdictTone: "paper",
     recentRank: 7,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780060883287-L.jpg",
+    cover: "/covers/ciudad.jpg",
   },
   {
     slug: "beloved",
@@ -198,7 +198,7 @@ export const books: Book[] = [
     verdictTone: "paper",
     recentRank: 8,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9781400033416-L.jpg",
+    cover: "/covers/beloved.jpg",
   },
   {
     slug: "gente-normal",
@@ -218,7 +218,7 @@ export const books: Book[] = [
     verdictTone: "muted",
     recentRank: 9,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9781984822178-L.jpg",
+    cover: "/covers/gente-normal.jpg",
   },
   {
     slug: "vegetariana",
@@ -238,7 +238,7 @@ export const books: Book[] = [
     verdictTone: "muted",
     recentRank: 10,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9781101904934-L.jpg",
+    cover: "/covers/vegetariana.jpg",
   },
   {
     slug: "circe",
@@ -258,7 +258,7 @@ export const books: Book[] = [
     verdictTone: "muted",
     recentRank: 11,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780316556347-L.jpg",
+    cover: "/covers/circe.jpg",
   },
   {
     slug: "orgullo",
@@ -278,7 +278,7 @@ export const books: Book[] = [
     verdictTone: "muted",
     recentRank: 12,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780141439518-L.jpg",
+    cover: "/covers/orgullo.jpg",
   },
   {
     slug: "dependienta",
@@ -298,7 +298,7 @@ export const books: Book[] = [
     verdictTone: "muted",
     recentRank: 13,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780802128256-L.jpg",
+    cover: "/covers/dependienta.jpg",
   },
   {
     slug: "restos-del-dia",
@@ -318,7 +318,7 @@ export const books: Book[] = [
     verdictTone: "paper",
     recentRank: 14,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780679731726-L.jpg",
+    cover: "/covers/restos-del-dia.jpg",
   },
   {
     slug: "giovanni",
@@ -338,7 +338,7 @@ export const books: Book[] = [
     verdictTone: "paper",
     recentRank: 15,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780345806567-L.jpg",
+    cover: "/covers/giovanni.jpg",
   },
   {
     slug: "historia-secreta",
@@ -358,7 +358,7 @@ export const books: Book[] = [
     verdictTone: "muted",
     recentRank: 16,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780679760203-L.jpg",
+    cover: "/covers/historia-secreta.jpg",
   },
   {
     slug: "gotico",
@@ -378,7 +378,7 @@ export const books: Book[] = [
     verdictTone: "muted",
     recentRank: 17,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780525620785-L.jpg",
+    cover: "/covers/gotico.jpg",
   },
   {
     slug: "gatsby",
@@ -398,7 +398,7 @@ export const books: Book[] = [
     verdictTone: "blush",
     recentRank: 18,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780743273565-L.jpg",
+    cover: "/covers/gatsby.jpg",
   },
   {
     slug: "hill-house",
@@ -418,7 +418,7 @@ export const books: Book[] = [
     verdictTone: "paper",
     recentRank: 19,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780143039983-L.jpg",
+    cover: "/covers/hill-house.jpg",
   },
   {
     slug: "ruisenor",
@@ -438,7 +438,7 @@ export const books: Book[] = [
     verdictTone: "muted",
     recentRank: 20,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780061120084-L.jpg",
+    cover: "/covers/ruisenor.jpg",
   },
   {
     slug: "resplandor",
@@ -458,7 +458,7 @@ export const books: Book[] = [
     verdictTone: "muted",
     recentRank: 21,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780307743657-L.jpg",
+    cover: "/covers/resplandor.jpg",
   },
   {
     slug: "guardian",
@@ -478,7 +478,7 @@ export const books: Book[] = [
     verdictTone: "blush",
     recentRank: 22,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780316769488-L.jpg",
+    cover: "/covers/guardian.jpg",
   },
   {
     slug: "rebecca",
@@ -498,7 +498,7 @@ export const books: Book[] = [
     verdictTone: "paper",
     recentRank: 23,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780380730407-L.jpg",
+    cover: "/covers/rebecca.jpg",
   },
   {
     slug: "campana",
@@ -518,7 +518,7 @@ export const books: Book[] = [
     verdictTone: "muted",
     recentRank: 24,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780060837020-L.jpg",
+    cover: "/covers/campana.jpg",
   },
   {
     slug: "nuestra-parte",
@@ -538,7 +538,7 @@ export const books: Book[] = [
     verdictTone: "paper",
     recentRank: 25,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780451495143-L.jpg",
+    cover: "/covers/nuestra-parte.jpg",
   },
   {
     slug: "cadaver",
@@ -558,7 +558,7 @@ export const books: Book[] = [
     verdictTone: "muted",
     recentRank: 26,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9781982150921-L.jpg",
+    cover: "/covers/cadaver.jpg",
   },
   {
     slug: "1984",
@@ -578,7 +578,7 @@ export const books: Book[] = [
     verdictTone: "paper",
     recentRank: 27,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780451524935-L.jpg",
+    cover: "/covers/1984.jpg",
   },
   {
     slug: "jilguero",
@@ -598,7 +598,7 @@ export const books: Book[] = [
     verdictTone: "blush",
     recentRank: 28,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780316055444-L.jpg",
+    cover: "/covers/jilguero.jpg",
   },
   {
     slug: "criada",
@@ -618,7 +618,7 @@ export const books: Book[] = [
     verdictTone: "paper",
     recentRank: 29,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780385490818-L.jpg",
+    cover: "/covers/criada.jpg",
   },
   {
     slug: "frankenstein",
@@ -638,7 +638,7 @@ export const books: Book[] = [
     verdictTone: "muted",
     recentRank: 30,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780141439471-L.jpg",
+    cover: "/covers/frankenstein.jpg",
   },
   {
     slug: "dune",
@@ -658,7 +658,7 @@ export const books: Book[] = [
     verdictTone: "muted",
     recentRank: 31,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780441172719-L.jpg",
+    cover: "/covers/dune.jpg",
   },
   {
     slug: "dracula",
@@ -678,7 +678,7 @@ export const books: Book[] = [
     verdictTone: "muted",
     recentRank: 32,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780141439846-L.jpg",
+    cover: "/covers/dracula.jpg",
   },
   {
     slug: "neuromante",
@@ -698,7 +698,7 @@ export const books: Book[] = [
     verdictTone: "muted",
     recentRank: 33,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780441569595-L.jpg",
+    cover: "/covers/neuromante.jpg",
   },
   {
     slug: "mano-izquierda",
@@ -718,7 +718,7 @@ export const books: Book[] = [
     verdictTone: "paper",
     recentRank: 34,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780441478125-L.jpg",
+    cover: "/covers/mano-izquierda.jpg",
   },
   {
     slug: "parentesco",
@@ -738,7 +738,7 @@ export const books: Book[] = [
     verdictTone: "paper",
     recentRank: 35,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780807083697-L.jpg",
+    cover: "/covers/parentesco.jpg",
   },
   {
     slug: "estacion-once",
@@ -758,7 +758,7 @@ export const books: Book[] = [
     verdictTone: "muted",
     recentRank: 36,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780804172448-L.jpg",
+    cover: "/covers/estacion-once.jpg",
   },
   {
     slug: "mundo-feliz",
@@ -778,7 +778,7 @@ export const books: Book[] = [
     verdictTone: "blush",
     recentRank: 37,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780060850524-L.jpg",
+    cover: "/covers/mundo-feliz.jpg",
   },
   {
     slug: "argonautas",
@@ -798,7 +798,7 @@ export const books: Book[] = [
     verdictTone: "muted",
     recentRank: 38,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9781555977351-L.jpg",
+    cover: "/covers/argonautas.jpg",
   },
   {
     slug: "entre-el-mundo",
@@ -818,7 +818,7 @@ export const books: Book[] = [
     verdictTone: "paper",
     recentRank: 39,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780812993547-L.jpg",
+    cover: "/covers/entre-el-mundo.jpg",
   },
   {
     slug: "habitacion-propia",
@@ -838,7 +838,7 @@ export const books: Book[] = [
     verdictTone: "paper",
     recentRank: 40,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780156787338-L.jpg",
+    cover: "/covers/habitacion-propia.jpg",
   },
   {
     slug: "proxima-vez",
@@ -858,7 +858,7 @@ export const books: Book[] = [
     verdictTone: "paper",
     recentRank: 41,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780679744726-L.jpg",
+    cover: "/covers/proxima-vez.jpg",
   },
   {
     slug: "casa-suenos",
@@ -878,7 +878,7 @@ export const books: Book[] = [
     verdictTone: "muted",
     recentRank: 42,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9781644450031-L.jpg",
+    cover: "/covers/casa-suenos.jpg",
   },
   {
     slug: "modos-de-ver",
@@ -898,7 +898,7 @@ export const books: Book[] = [
     verdictTone: "muted",
     recentRank: 43,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9780140135152-L.jpg",
+    cover: "/covers/modos-de-ver.jpg",
   },
   {
     slug: "pensamiento-magico",
@@ -918,7 +918,7 @@ export const books: Book[] = [
     verdictTone: "paper",
     recentRank: 44,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9781400078431-L.jpg",
+    cover: "/covers/pensamiento-magico.jpg",
   },
   {
     slug: "hombres-explican",
@@ -938,7 +938,7 @@ export const books: Book[] = [
     verdictTone: "muted",
     recentRank: 45,
     featured: false,
-    cover: "https://covers.openlibrary.org/b/isbn/9781608464661-L.jpg",
+    cover: "/covers/hombres-explican.jpg",
   },
 ];
 
