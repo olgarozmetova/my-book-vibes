@@ -1,5 +1,37 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro"
+import Catalog from "../components/Catalog.tsx"
+import { books } from "../data/books"
+
+const total = books.length
+const average = (books.reduce((sum, book) => sum + book.score, 0) / total).toFixed(1)
 ---
 
-<BaseLayout title="Libros · MyBookVibes" current="books" />
+<BaseLayout title="Libros · MyBookVibes" current="books">
+  <div class="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
+    <div>
+      <p class="flex items-center gap-2 text-[11px] font-medium tracking-[0.12em] text-muted">
+        <i class="inline-block size-1.5 bg-coral"></i>
+        ÍNDICE CRÍTICO · ARCHIVO 2026
+      </p>
+      <h1 class="mt-4.5 font-display text-[2.5rem] leading-tight font-bold tracking-[-0.03em]">
+        Libros & Reseñas
+        <span class="ml-2 font-serif text-[17px] font-normal text-muted">({total} títulos analizados)</span>
+      </h1>
+      <p class="mt-2 font-serif text-xl text-muted">Calificaciones directas del 1 al 10 y síntesis sin rodeos.</p>
+    </div>
+    <div class="flex items-center gap-4 self-start bg-card px-4 py-3">
+      <div>
+        <small class="block text-[11px] tracking-[0.08em] text-muted">PROMEDIO ANUAL</small>
+        <b class="text-xl text-blush">{average}</b>
+        <small class="text-[11px] tracking-[0.08em] text-muted">/10</small>
+      </div>
+      <div class="h-8 w-px bg-line"></div>
+      <div>
+        <small class="block text-[11px] tracking-[0.08em] text-muted">RITMO DE LECTURA</small>
+        <span class="text-xs font-semibold text-gold-soft">4 libros/mes</span>
+      </div>
+    </div>
+  </div>
+  <Catalog client:load books={books} />
+</BaseLayout>
