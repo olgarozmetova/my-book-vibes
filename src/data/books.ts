@@ -178,7 +178,7 @@ export const books: Book[] = [
     verdictTone: "paper",
     recentRank: 7,
     featured: false,
-    cover: "/covers/ciudad.jpg",
+    cover: "/covers/cien-anos.jpg",
   },
   {
     slug: "beloved",

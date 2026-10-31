@@ -1,0 +1,46 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro"
+import TextLink from "../../components/TextLink.astro"
+import { books, formatScore, type Book } from "../../data/books"
+
+export function getStaticPaths() {
+  return books.map((book) => ({
+    params: { slug: book.slug },
+    props: { book },
+  }))
+}
+
+interface Props {
+  book: Book
+}
+
+const { book } = Astro.props
+---
+
+<BaseLayout title={`${book.title} · MyBookVibes`} current="books">
+  <article class="grid items-start gap-8 md:grid-cols-[17.5rem_1fr] md:gap-12">
+    <img
+      class="h-80 w-full bg-surface object-cover md:h-105 md:w-70"
+      src={book.cover}
+      alt={book.title}
+      width="280"
+      height="420"
+    />
+    <div>
+      <p class="text-[11px] tracking-widest text-muted">{book.tag}</p>
+      <p class="mt-2 flex items-end gap-1.5">
+        <span class="text-5xl leading-none font-bold text-coral">{formatScore(book.score)}</span>
+        <small class="mb-1.5 text-xs text-muted">/ 10</small>
+      </p>
+      <h2 class="mt-3 font-display text-[2rem] tracking-[-0.03em]">{book.title}</h2>
+      <p class="mt-1 mb-4 font-serif text-lg">{book.author}</p>
+      <p class="text-[13px] tracking-[0.04em] text-muted">{book.facts.join(" · ")}</p>
+      <blockquote class="mt-5.5 border-l-2 border-coral pl-4 font-serif text-lg leading-[1.45]">
+        {book.quote}
+      </blockquote>
+      <p class="mt-6">
+        <TextLink href="/books">Ver todos los libros en Books</TextLink>
+      </p>
+    </div>
+  </article>
+</BaseLayout>
