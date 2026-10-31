@@ -1,8 +1,12 @@
 ---
 import TextLink from "../TextLink.astro"
+import HeroGlow from "../HeroGlow.tsx"
 import { edition } from "../../data/books"
 ---
 
+<section data-hero class="relative isolate -mx-5 overflow-x-clip px-5">
+  <HeroGlow client:load />
+  
 <p class="flex items-center gap-2 text-[11px] font-medium tracking-[0.12em] text-muted">
   <i class="inline-block size-1.5 bg-coral"></i>
   CRÍTICA NOCTURNA · EDICIÓN #{edition.number}
@@ -22,3 +26,4 @@ import { edition } from "../../data/books"
   <span class="text-line" aria-hidden="true">/</span>
   <span class="font-serif text-[15px] text-muted">{edition.archiveLabel}</span>
 </p>
+</section>
