@@ -41,7 +41,7 @@ export default function HeroUnderline() {
       aria-hidden="true"
       viewBox="0 0 200 12"
       preserveAspectRatio="none"
-      className="pointer-events-none absolute bottom-[0.12em] left-0 h-[0.3em] w-full text-coral"
+      className="pointer-events-none absolute bottom-[-0.08em] left-0 h-[0.3em] w-full text-coral"
     >
       <path
         ref={pathRef}

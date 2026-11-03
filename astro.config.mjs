@@ -12,6 +12,10 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 
-  adapter: netlify(),
+  adapter: netlify({
+    // Deno 2.9+ rejects the --allow-scripts flag used by the local edge functions emulator.
+    // This project has no edge functions, so the emulator is disabled in dev.
+    devFeatures: { edgeFunctions: false },
+  }),
   integrations: [react()],
 })

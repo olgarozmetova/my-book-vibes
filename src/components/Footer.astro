@@ -1,3 +1,8 @@
+---
+// Year at build time; the script below keeps it current on statically hosted pages.
+const year = new Date().getFullYear()
+---
+
 <footer class="bg-canvas">
   <div class="mx-auto flex w-full max-w-300 flex-col items-start justify-between gap-6 border-t border-line px-5 py-8 sm:min-h-[136px] md:flex-row md:items-center">
     <div>
@@ -11,6 +16,12 @@
       <a href="/about" class="transition-colors hover:text-paper">MANIFIESTO</a>
       <a href="/#boletin" class="transition-colors hover:text-paper">BOLETÍN</a>
     </nav>
-    <p class="text-[11px] tracking-[0.04em] text-muted">© 2026 MyBookVibes. Todos los derechos reservados.</p>
+    <p class="text-[11px] tracking-[0.04em] text-muted">© <span data-year>{year}</span> MyBookVibes. Todos los derechos reservados.</p>
   </div>
 </footer>
+
+<script>
+  document.querySelectorAll("[data-year]").forEach((el) => {
+    el.textContent = String(new Date().getFullYear())
+  })
+</script>
