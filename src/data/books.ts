@@ -27,7 +27,6 @@ export interface Book {
 export const edition = {
   number: 48,
   featuredDate: "Jueves, 24 de Octubre",
-  archiveLabel: "142 obras desglosadas",
 };
 
 export const books: Book[] = [
